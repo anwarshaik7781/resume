@@ -34,22 +34,12 @@ phone.textContent=basicdetails.phone;
 left.appendChild(phone);
 } 
 
-
-var main=document.querySelector(".main");
 var right=document.createElement("div");
 right.classList.add("right");
 main.appendChild(right);
-function basic(basicdetails){
-var image1=document.createElement("img");
-image1.src=basicdetails.image;
-right.appendChild(image1);
-var name=document.createElement("h3");
-name.textContent=basicdetails.name;
-right.appendChild(name);
-var email=document.createElement("h3");
-email.textContent=basicdetails.email;
-right.appendChild(email);
-var phone=document.createElement("h3");
-phone.textContent=basicdetails.phone;
-right.appendChild(phone);
-}
+function edu(education){
+	var un=document.createElement("un");
+	right.appendChild(un);
+	for (var i = 0;i<education.length;i++) {
+		var 1=document.createElement("li");
+		
