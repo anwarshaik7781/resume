@@ -1,0 +1,18 @@
+.main{
+	width:100%;
+	background-color:lightgrey;
+	display:flex;
+}
+.left{
+	width:30%;
+	border: 3px solid white;
+}
+.right{
+	width: 70%;
+	border: 3px solid white;
+}
+img{
+	width: 100px;
+	border: 5px solid black;
+
+}
