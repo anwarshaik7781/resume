@@ -1,8 +1,25 @@
 {
-	" details":{
-		"name":"Anwar",
-		"image":"image.png",
-		"phone":"8977555555",
-		"email":"anwarshaik7781@gmail.com"
-	}
+	"details": {
+		"name": "Anwar",
+		"image": "sidharth.jpg",
+		"phone": "8977555555",
+		"email": "anwarshaik7781@gmail.com"
+	},
+	"education": [{
+
+			"course": "B.tech",
+			"college": "MIC College Of Technology",
+			"percentage": "98%"
+		},
+		{
+			"course": "Intermediate",
+			"college": "Narayana Junior College",
+			"percentage": "98%"
+		},
+		{
+			"course": "SSC",
+			"school": "Rama Public School",
+			"percentage": "98%"
+		}
+	]
 }
