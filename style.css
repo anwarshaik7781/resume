@@ -1,3 +1,6 @@
+
+
+
 .main{
 	width: 100%;
 	background-color:lightgrey;
@@ -56,7 +59,10 @@ h3
 		flex-direction: colomn;
 	}
 }  
-.ssetable,tr,td{
-
-
+.set table,td,tr{
+	border: 2px solid;
+}
+table {
+	margin-left: auto;
+	margin-right: auto;
 }
