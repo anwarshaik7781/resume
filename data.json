@@ -2,24 +2,40 @@
 	"details": {
 		"name": "Anwar",
 		"image": "sidharth.jpg",
-		"phone": "8977555555",
+		"phone": "897755550*",
 		"email": "anwarshaik7781@gmail.com"
 	},
-	"education": [{
+	"education": [
+		{
 
-			"course": "B.tech",
+			"course": "B.Tech(CSE)",
 			"college": "MIC College Of Technology",
-			"percentage": "98%"
+			"percentage": "70%"
 		},
 		{
-			"course": "Intermediate",
-			"college": "Narayana Junior College",
-			"percentage": "98%"
+			"course": "Intermediate(MPC)",
+			"college": "Sri Chaitanya Junior College",
+			"percentage": "73%"
 		},
 		{
 			"course": "SSC",
-			"school": "Rama Public School",
-			"percentage": "98%"
+			"college": "Rama Public School",
+			"percentage": "82%"
 		}
+	],
+	    "skills":[
+{
+	"title":"Programming Languages",
+	"output":[
+		"C","C++","Java","Python"
 	]
+
+   },
+   {
+   		"title":"Operating Systems",
+   		"output":[
+   			"Windows","Linux","MAC"
+   		]
+   } 
+ ]
 }

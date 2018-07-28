@@ -12,7 +12,9 @@ function loadjson(file,callback) {
 loadjson("data.json",function(text){
 	let data=JSON.parse(text);
 	console.log(data);
-	basic(data.details); 
+	basic(data.details);
+	edu(data.education);
+	skill(data.skills) 
 })
 
 var main=document.querySelector(".main");
@@ -33,13 +35,45 @@ var phone=document.createElement("h3");
 phone.textContent=basicdetails.phone;
 left.appendChild(phone);
 } 
-
+var main=document.querySelector(".main");
 var right=document.createElement("div");
 right.classList.add("right");
 main.appendChild(right);
 function edu(education){
-	var un=document.createElement("un");
+	var h1=document.createElement("h1");
+	h1.textContent="Education Details";
+	h1.appendChild(document.createElement("HR"));
+	right.appendChild(h1);
+	var un=document.createElement("ul");
 	right.appendChild(un);
-	for (var i = 0;i<education.length;i++) {
-		var 1=document.createElement("li");
-		
+	for(var i = 0;i < education.length;i++){
+		var l=document.createElement("h4");
+		var l1=document.createElement("li");
+		var l2=document.createElement("li");
+		l.textContent=education[i].course;
+		l1.textContent=education[i].college;
+		l2.textContent=education[i].percentage;
+		un.appendChild(l);
+		un.appendChild(l1);
+		un.appendChild(l2);
+	}
+}
+	function skill(skilldata) {
+		var s=document.createElement("div");
+		s.classList.add("sset");
+		right.appendChild(s);
+		var head=document.createElement("h1");
+		head.textContent="Skill Set";
+		head.appendChild(document.createElement("HR"));
+		s.appendChild(head);
+		var t=document.createElement("table");
+		var tabledata="";
+		for(var i = 0;i < skilldata.length; i++){
+			tabledata+="<tr><td>"+skilldata[i].title+"</td><td>"+skilldata[i].output+"</td></tr>"
+			t.innerHTML=tabledata;
+
+		}
+			head.appendChild(t);
+
+ }
+
